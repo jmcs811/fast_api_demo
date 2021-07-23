@@ -13,4 +13,4 @@ jobs:
           name: TEST
           command: |
             cd app
-            pytest test.py
+            python3 -m pytest --version
