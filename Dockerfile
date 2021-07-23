@@ -1,6 +1,6 @@
 FROM python:3.7-alpine3.14
 
-RUN pip install fastapi uvicorn pytest
+RUN pip install fastapi requests uvicorn pytest
 RUN apk update
 RUN apk add git gzip ca-certificates
 
