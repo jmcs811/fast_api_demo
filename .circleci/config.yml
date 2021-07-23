@@ -1,0 +1,15 @@
+version: 2
+
+jobs:
+  build:
+    docker:
+      - image: undefinedref/fast_api_primary:0.0.1
+      auth:
+        username: undefinedref
+        password: $DOCKERHUB_PASSWORD
+  steps:
+    - checkout
+    - run:
+        name: Test
+        command: |
+          python3 -m pytest
