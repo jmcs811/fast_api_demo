@@ -12,5 +12,5 @@ jobs:
       - run:
           name: TEST
           command: |
-            ls
-            pwd
+            cd app
+            python3 -m pytest test.py
