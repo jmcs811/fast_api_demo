@@ -13,4 +13,4 @@ jobs:
           name: TEST
           command: |
             cd app
-            python3 -m pytest test.py
+            pytest test.py
