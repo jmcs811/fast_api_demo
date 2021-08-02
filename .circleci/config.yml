@@ -12,5 +12,8 @@ jobs:
       - run:
           name: TEST
           command: |
+            ls ~/project
+            ls ~/
+            ls /
             cd app
             python3 -m pytest -q test.py
